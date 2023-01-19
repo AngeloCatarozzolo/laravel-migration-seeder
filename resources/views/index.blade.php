@@ -25,8 +25,7 @@
             <h1>Lista treni</h1>
             <ul>
                 @foreach ($trains as $train)
-                <h4>{{}}</h4>
-                    
+                <li>{{ $train->departure_station }} - {{ $train->arrival_station }} </li>
                 @endforeach
             </ul>
         </main>
